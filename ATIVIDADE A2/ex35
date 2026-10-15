@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main() {
+    int inicio, fim, passo, i;
+
+    printf("Digite o limite inferior: ");
+    scanf("%d", &inicio);
+
+    printf("Digite o limite superior: ");
+    scanf("%d", &fim);
+
+    printf("Digite o passo: ");
+    scanf("%d", &passo);
+
+    if (passo <= 0) {
+        printf("\nErro: o passo deve ser maior que zero.\n");
+        return 1;
+    }
+
+    printf("\nAscendente: ");
+    for (i = inicio; i <= fim; i += passo) {
+        printf("%d", i);
+        if (i + passo <= fim) {
+            printf(" - ");
+        }
+    }
+
+    printf("\nDescendente: ");
+    for (i = fim; i >= inicio; i -= passo) {
+        printf("%d", i);
+        if (i - passo >= inicio) {
+            printf(" - ");
+        }
+    }
+
+    printf("\n");
+
+    return 0;
+}
