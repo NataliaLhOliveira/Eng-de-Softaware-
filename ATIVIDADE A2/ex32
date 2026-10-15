@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    float renda, parcela, margem;
+    int inadimplente;
+
+    printf("Digite a renda mensal bruta (R$): ");
+    scanf("%f", &renda);
+
+    printf("Digite o valor da parcela do emprestimo (R$): ");
+    scanf("%f", &parcela);
+
+    printf("Situacao no cadastro de protecao ao credito (0 = adimplente, 1 = inadimplente): ");
+    scanf("%d", &inadimplente);
+
+    margem = renda * 0.30;
+
+    printf("\nMargem consignavel (30%% da renda): R$ %.2f\n", margem);
+
+    if (parcela <= margem && inadimplente == 0) {
+        printf("PARECER: EMPRESTIMO APROVADO\n");
+    }
+    else {
+        printf("PARECER: EMPRESTIMO RECUSADO\n");
+    }
+
+    return 0;
+}
