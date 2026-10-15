@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    float media, frequencia;
+
+    printf("Digite a media semestral acumulada: ");
+    scanf("%f", &media);
+
+    printf("Digite o percentual de frequencia: ");
+    scanf("%f", &frequencia);
+
+    if (media >= 6.0 && frequencia >= 75.0) {
+        printf("\nSTATUS: APROVADO\n");
+    }
+    else if (media >= 4.0 && media < 6.0 && frequencia >= 75.0) {
+        printf("\nSTATUS: EM RECUPERACAO (Exame)\n");
+    }
+    else {
+        printf("\nSTATUS: REPROVADO\n");
+    }
+
+    return 0;
+}
