@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    char componente[] = "Processador";
+    char marca[] = "Intel";
+    int nucleos = 8;
+    float velocidade = 3.5;
+
+    printf("Componente: %s\n", componente);
+    printf("Marca: %s\n", marca);
+    printf("Nucleos: %d\n", nucleos);
+    printf("Velocidade: %.2f GHz\n", velocidade);
+
+    return 0;
+}
