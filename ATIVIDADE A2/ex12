@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    float distancia, litros, preco;
+    float consumo, custoKm;
+
+    printf("Digite a distancia percorrida em km: ");
+    scanf("%f", &distancia);
+
+    printf("Digite os litros consumidos: ");
+    scanf("%f", &litros);
+
+    printf("Digite o preco do litro: R$ ");
+    scanf("%f", &preco);
+
+    if (distancia > 0 && litros > 0 && preco >= 0) {
+        consumo = distancia / litros;
+        custoKm = (litros * preco) / distancia;
+
+        printf("Consumo: %.2f km/L\n", consumo);
+        printf("Custo por km: R$ %.2f\n", custoKm);
+    } else {
+        printf("Valores invalidos. Confira os dados digitados.\n");
+    }
+
+    return 0;
+}
