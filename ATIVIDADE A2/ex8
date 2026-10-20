@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int versao = 2;
+    int dia = 20;
+    int mes = 10;
+    int ano = 2026;
+
+    printf("Versao do programa: %d.0\n", versao);
+    printf("Data de lancamento: %02d/%02d/%d\n", dia, mes, ano);
+
+    return 0;
+}
