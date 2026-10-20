@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main() {
+    printf("Inicial: 'J'\n");
+    printf("Aspas duplas: \"Ola!\"\n");
+    printf("Barra invertida: \\\n");
+    printf("Caractere especial: %%\n");
+
+    return 0;
+}
