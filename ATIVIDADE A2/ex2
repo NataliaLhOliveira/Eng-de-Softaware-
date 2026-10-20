@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    float produto1 = 15.5;
+    float produto2 = 29.9;
+    float produto3 = 7.25;
+
+    printf("Produto 1: R$ %.2f\n", produto1);
+    printf("Produto 2: R$ %.2f\n", produto2);
+    printf("Produto 3: R$ %.2f\n", produto3);
+
+    return 0;
+}
