@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+    float latitude = -23.5505;
+    float longitude = -46.6333;
+
+    printf("Latitude: %.4f\n", latitude);
+    printf("Longitude: %.4f\n", longitude);
+
+    return 0;
+}
