@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+int main() {
+    printf("Servidor: Online\nCPU: 45%%\nMemoria RAM: 70%%\nDisco: 60%%\n");
+
+    return 0;
+}
