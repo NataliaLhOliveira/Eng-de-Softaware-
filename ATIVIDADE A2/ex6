@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main() {
+    printf("EXTRATO BANCARIO\n\n");
+    printf("Saldo anterior: R$ 500.00\n\n");
+    printf("Deposito: R$ 200.00\n\n");
+    printf("Saldo atual: R$ 700.00\n\n");
+
+    return 0;
+}
