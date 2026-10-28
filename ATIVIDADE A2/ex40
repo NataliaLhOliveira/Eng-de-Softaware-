@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int a1, r, N, i, termo;
+
+    printf("Digite o primeiro termo: ");
+    scanf("%d", &a1);
+
+    printf("Digite a razao: ");
+    scanf("%d", &r);
+
+    printf("Digite a quantidade de termos: ");
+    scanf("%d", &N);
+
+    for (i = 0; i < N; i++) {
+        termo = a1 + (i * r);
+
+        if (i > 0) {
+            printf(", ");
+        }
+
+        printf("%d", termo);
+    }
+
+    printf("\n");
+
+    return 0;
+}
