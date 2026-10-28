@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    int N, i;
+    float nota1, nota2, media;
+    float somaMedias = 0, mediaTurma;
+
+    printf("Quantidade de alunos: ");
+    scanf("%d", &N);
+
+    for (i = 1; i <= N; i++) {
+        printf("Digite as duas notas do aluno %d: ", i);
+        scanf("%f %f", &nota1, &nota2);
+
+        media = (nota1 + nota2) / 2;
+        somaMedias = somaMedias + media;
+
+        if (media >= 6.0) {
+            printf("Aluno aprovado! Media: %.1f\n", media);
+        } else {
+            printf("Aluno reprovado! Media: %.1f\n", media);
+        }
+    }
+
+    if (N > 0) {
+        mediaTurma = somaMedias / N;
+        printf("Media da turma: %.2f\n", mediaTurma);
+    }
+
+    return 0;
+}
