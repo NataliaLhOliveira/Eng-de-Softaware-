@@ -1,0 +1,59 @@
+#include <stdio.h>
+
+int main() {
+    int codigo, opcao;
+    float preco, total = 0;
+    float desconto, valorFinal, pagamento, troco;
+
+    printf("Digite o codigo do produto (0 para finalizar): ");
+    scanf("%d", &codigo);
+
+    while (codigo != 0) {
+        printf("Digite o preco do produto: R$ ");
+        scanf("%f", &preco);
+
+        total = total + preco;
+
+        printf("Digite o codigo do produto (0 para finalizar): ");
+        scanf("%d", &codigo);
+    }
+
+    printf("\nTotal da compra: R$ %.2f\n", total);
+
+    printf("Forma de pagamento:\n");
+    printf("1 - Dinheiro\n");
+    printf("2 - Cartao\n");
+    printf("Escolha: ");
+    scanf("%d", &opcao);
+
+    if (opcao == 1) {
+        desconto = total * 0.05;
+        valorFinal = total - desconto;
+
+        printf("Desconto: R$ %.2f\n", desconto);
+        printf("Total com desconto: R$ %.2f\n", valorFinal);
+
+        printf("Valor entregue: R$ ");
+        scanf("%f", &pagamento);
+
+        if (pagamento >= valorFinal) {
+            troco = pagamento - valorFinal;
+            printf("Troco: R$ %.2f\n", troco);
+        } else {
+            printf("Valor insuficiente para pagamento.\n");
+        }
+
+    } else if (opcao == 2) {
+        valorFinal = total;
+        printf("Pagamento no cartao: R$ %.2f\n", valorFinal);
+
+    } else {
+        printf("Forma de pagamento invalida!\n");
+    }
+
+    printf("\n--- EXTRATO DA COMPRA ---\n");
+    printf("Total bruto: R$ %.2f\n", total);
+    printf("Total a pagar: R$ %.2f\n", valorFinal);
+
+    return 0;
+}
