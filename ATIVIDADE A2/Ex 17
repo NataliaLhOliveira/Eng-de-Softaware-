@@ -1,0 +1,21 @@
+#include <stdio.h>
+ 
+int main() {
+    float precoA, precoB;
+ 
+    printf("Preco na loja A: R$ ");
+    scanf("%f", &precoA);
+    printf("Preco na loja B: R$ ");
+    scanf("%f", &precoB);
+ 
+    if (precoA < precoB) {
+        printf("Loja A tem o menor preco: R$ %.2f\n", precoA);
+    } else if (precoB < precoA) {
+        printf("Loja B tem o menor preco: R$ %.2f\n", precoB);
+    } else {
+        printf("Os precos sao iguais\n");
+    }
+ 
+    return 0;
+}
+ 
