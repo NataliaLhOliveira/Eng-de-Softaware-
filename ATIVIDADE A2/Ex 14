@@ -1,0 +1,17 @@
+#include <stdio.h>
+ 
+int main() {
+    float total, porPessoa;
+    int pessoas;
+ 
+    printf("Digite o valor total da conta: R$ ");
+    scanf("%f", &total);
+    printf("Digite a quantidade de pessoas: ");
+    scanf("%d", &pessoas);
+ 
+    porPessoa = total / pessoas;
+    printf("Valor por pessoa: R$ %.2f\n", porPessoa);
+ 
+    return 0;
+}
+ 
