@@ -1,0 +1,22 @@
+#include <stdio.h>
+ 
+int main() {
+    int estoque, pedido;
+ 
+    printf("Quantidade disponivel em estoque: ");
+    scanf("%d", &estoque);
+    printf("Quantidade solicitada pelo cliente: ");
+    scanf("%d", &pedido);
+ 
+    if (pedido <= estoque) {
+        estoque = estoque - pedido;
+        printf("Venda confirmada\n");
+        printf("Estoque restante: %d\n", estoque);
+    } else {
+        printf("Estoque insuficiente\n");
+        printf("Estoque mantido: %d\n", estoque);
+    }
+ 
+    return 0;
+}
+ 
