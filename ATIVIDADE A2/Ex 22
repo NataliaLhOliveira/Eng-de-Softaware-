@@ -1,0 +1,29 @@
+#include <stdio.h>
+ 
+int main() {
+    int opcao;
+ 
+    printf("Maquina de bebidas\n");
+    printf("1 - Agua   (R$ 3,00)\n");
+    printf("2 - Suco   (R$ 5,00)\n");
+    printf("3 - Cafe   (R$ 4,00)\n");
+    printf("Escolha uma opcao: ");
+    scanf("%d", &opcao);
+ 
+    switch (opcao) {
+        case 1:
+            printf("Bebida: Agua - R$ 3,00\n");
+            break;
+        case 2:
+            printf("Bebida: Suco - R$ 5,00\n");
+            break;
+        case 3:
+            printf("Bebida: Cafe - R$ 4,00\n");
+            break;
+        default:
+            printf("Opcao invalida\n");
+    }
+ 
+    return 0;
+}
+ 
