@@ -1,0 +1,21 @@
+#include <stdio.h>
+ 
+int main() {
+    float planejado, gasto;
+ 
+    printf("Valor planejado para os gastos: R$ ");
+    scanf("%f", &planejado);
+    printf("Valor efetivamente gasto: R$ ");
+    scanf("%f", &gasto);
+ 
+    if (gasto < planejado) {
+        printf("Ainda disponivel: R$ %.2f\n", planejado - gasto);
+    } else if (gasto == planejado) {
+        printf("Orcamento totalmente utilizado\n");
+    } else {
+        printf("Gasto a mais: R$ %.2f\n", gasto - planejado);
+    }
+ 
+    return 0;
+}
+ 
