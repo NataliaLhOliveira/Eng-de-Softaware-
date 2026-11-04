@@ -1,0 +1,19 @@
+#include <stdio.h>
+ 
+int main() {
+    float compra, desconto = 0, total;
+ 
+    printf("Digite o valor da compra: R$ ");
+    scanf("%f", &compra);
+ 
+    if (compra >= 200.00) {
+        desconto = compra * 0.10;
+    }
+    total = compra - desconto;
+ 
+    printf("Desconto: R$ %.2f\n", desconto);
+    printf("Total a pagar: R$ %.2f\n", total);
+ 
+    return 0;
+}
+ 
