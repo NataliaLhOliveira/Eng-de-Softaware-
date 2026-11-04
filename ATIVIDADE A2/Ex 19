@@ -1,0 +1,21 @@
+#include <stdio.h>
+ 
+int main() {
+    int pontos;
+ 
+    printf("Digite a pontuacao: ");
+    scanf("%d", &pontos);
+ 
+    if (pontos < 1000) {
+        printf("Bronze\n");
+    } else if (pontos < 1500) {
+        printf("Prata\n");
+    } else if (pontos < 2000) {
+        printf("Ouro\n");
+    } else {
+        printf("Diamante\n");
+    }
+ 
+    return 0;
+}
+ 
