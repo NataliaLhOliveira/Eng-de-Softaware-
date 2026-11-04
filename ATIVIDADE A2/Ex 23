@@ -1,0 +1,19 @@
+#include <stdio.h>
+ 
+int main() {
+    float nota, frequencia;
+ 
+    printf("Digite a nota final (0 a 10): ");
+    scanf("%f", &nota);
+    printf("Digite a frequencia (0 a 100): ");
+    scanf("%f", &frequencia);
+ 
+    if (nota >= 6.0 && frequencia >= 75) {
+        printf("Certificado liberado\n");
+    } else {
+        printf("Certificado nao liberado\n");
+    }
+ 
+    return 0;
+}
+ 
